@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Edit Recipe</h1>
+    </header>
+    <main>
+        <div class = "edit-recipe-form">
+            <form action="{{ url_for('edit_recipe', recipe_id=recipe['id']) }}" method="post">
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" id="recipe_name" name="recipe_name" value="{{ recipe.name }}">
+            
+                <label for="recipe_description">Recipe Description:</label>
+                <input type="text" id="recipe_description" name="recipe_description" value="{{ recipe.description }}">
+            
+                <label for="recipe_ingredients">Recipe Ingredients:</label>
+                <input type="text" id="recipe_ingredients" name="recipe_ingredients" value="{{ recipe.ingredients }}">
+
+                <label for="recipe_measurements">Recipe Measurements:</label>
+                <input type="text" id="recipe_measurements" name="recipe_measurements" value="{{ recipe_measurements }}">
+            
+                <label for="recipe_instructions">Recipe Instructions:</label>
+                <input type="text" id="recipe_instructions" name="recipe_instructions" value="{{ recipe.instructions }}">
+            
+                <input id="recipe-submit" type="submit" value="Update Recipe">
+            </form>
+            <a class = "return-main-page" href="{{ url_for('home') }}">Cancel</a>
+        <div>
+    </main>
+</body>
+</html>

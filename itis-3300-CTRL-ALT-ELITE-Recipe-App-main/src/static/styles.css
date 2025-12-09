@@ -1,0 +1,304 @@
+body{
+    /*could possibly change theme*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    text-align: center;
+    color: rgb(0, 165, 102); /*Green header - Could change with theme*/
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main{
+    padding:20px;
+    background: linear-gradient(rgba(248, 240, 229, .93), rgba(248, 240, 229, .93)), url('logo.jpg');
+    background-color:rgb(242,236,225);
+    /* background-image: url('logo.jpg'); */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+footer{ 
+    background-color: rgb(192, 186, 178);
+    /*places footer in the bottom middle*/
+    padding:10px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    left: 0;
+}
+
+.page-title{
+    margin-bottom: 10px;
+}
+.search{
+    text-align: center;
+    margin: 20px;
+    
+}
+.search-input{
+    width:300px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+#search-submit{
+    background-color:rgb(0, 165, 102);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    color: white;
+}
+#search-submit:hover{
+    background-color:rgb(0, 135, 82);
+}
+.nav-tabs{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.nav-tabs a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(0, 165, 102);
+    border-radius: 10px;
+    margin: 6px;
+}
+
+.nav-tabs a:hover{
+    background-color:rgb(0, 135, 82);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#add-recipe-button{
+    background-color:rgb(0, 165, 102);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+}
+
+#add-recipe-button:hover{
+    background-color:rgb(0, 135, 82);
+}
+
+#recipe-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-right: 25px;
+    background-color: rgb(213, 213, 212);
+    padding: 20px;
+    padding-left: 25px;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+}
+
+#recipe-form input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#recipe-form input[type="text"] {
+    width: 95%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+}
+
+#recipe-submit{
+    background-color:rgb(0, 165, 102);
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    color: white;
+}
+
+.recipe-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.recipe-item{
+    background-color: rgb(213, 213, 212);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.recipe-item a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(0, 165, 102);
+    border-radius: 10px;
+}
+
+.recipe-item a:hover{
+    background-color:rgb(0, 135, 82);
+}
+
+.edit-recipe-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-right: 25px;
+    background-color: rgb(213, 213, 212);
+    padding: 20px;
+    padding-left: 25px;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+}
+.edit-recipe-form input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit-recipe-form input[type="text"] {
+    width: 95%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+}
+
+#delete-button{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+    padding:10px;
+}
+
+.return-main-page{
+    padding: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(0, 165, 102);
+    border-radius: 10px;
+}
+.return-main-page:hover{
+    background-color:rgb(0, 135, 82);
+    size: 150%;
+}
+
+/* Centered, low-opacity image for the landing page */
+.landing-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden;
+    margin-bottom: 0px; 
+}
+
+.landing-image img {
+    max-width: 100%; /* We can change width as needed */
+    height: auto;
+    opacity: 0.2; 
+}
+
+
+.signupButton {
+    background-color: rgb(50, 165, 102);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+.signupButton:hover {
+    background-color: rgb(0, 135, 82);
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #b7bec2;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+
+
+}
+
+/* #signupForm input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #b7bec2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+} */
+
+/* #signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+} */
+
+#sign-up-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(213, 213, 212);
+    padding: 20px;
+    padding-left: 25px;
+    border-radius: 12px;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.profilePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(213, 213, 212);
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+}
+.profilePage h2 {
+    font-size: 24px;
+    margin-bottom:15px;
+
+}
+.profilePage p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.profilePage span {
+    font-weight: bold;
+}

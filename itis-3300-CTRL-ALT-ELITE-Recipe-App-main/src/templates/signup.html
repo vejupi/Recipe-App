@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset ="UTF-8">
+    <title>CTRL-ALT-EAT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body> 
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <script>
+            alert("{{ messages[0] }}");  // Displays the first flash message as a standard alert
+        </script>
+    {% endif %}
+{% endwith %}
+
+<!-- Your existing HTML content -->
+    <header>
+        <h1 id="page-title">CTRL-ALT-EAT</h1>
+    </header>
+    <main>
+        <!-- sign up form  -->
+        <div id="sign-up-div">
+            <h2> Sign Up</h2>
+            <form action="/signup" method="post">
+                <input id="signupForm" type="text" placeholder="First Name" name="first_name" required >
+                <input id="signupForm" type="text" placeholder="Last Name" name="last_name" required>
+                <input id="signupForm" type="email" placeholder="Email" name="email" required>    
+                <input id="signupForm" type="text" placeholder="Username" name="username" required>
+                <input id="signupForm" type="password" placeholder="Password" name="password" required>
+                <input id="signupForm" type="password" placeholder="Confirm Password" name="confirm_password" required>
+                <button class="signupButton" type="submit">Sign Up</button><br>
+                <a href="{{url_for('login')}}">Already have an account? Log in here</a>
+            </form>
+        </div>
+    
+    </main> 
+    <footer>
+        <p>&copy; 2024 CTRL-ALT-ELITE. All rights reserved.</p>
+    </footer>
+</body>
+</html>

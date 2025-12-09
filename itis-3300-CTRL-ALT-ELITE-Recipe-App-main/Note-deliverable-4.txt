@@ -1,0 +1,40 @@
+├── GROUP-INFO
+├── Meeting Minutes
+│   ├── meeting-min-nov-12  ------> Meeting files for this month 
+│   ├── meeting-min-nov-18  ------> Meeting files for this month 
+│   ├── meeting-min-nov-19  ------> Meeting files for this month 
+│   ├── meeting-min-oct-22
+│   ├── meeting-min-oct-28
+│   ├── meeting-mins-sept-06.md
+│   └── meeting-mins-sept-17
+├── Note-deliverable-2
+├── Note-deliverable-3.txt
+├── Note-deliverable-4.txt   ------> Note deliverable pointing out new files
+├── Planning Documents
+│   └── project-requirements.md
+├── Project Reports
+│   ├── Team Deliverable 3.pdf
+│   ├── Team Deliverable 4.pdf  ------> Deliverable 4 report pdf
+│   └── projectreports.md
+├── README.md
+├── deliverable1.txt
+├── inspection-code-CTRL-ALT-ELITE.pdf
+└── src
+    ├── __pycache__
+    │   └── app.cpython-312.pyc
+    ├── app.py
+    ├── database
+    │   └── database.sql
+    ├── requirements.txt
+    ├── static
+    │   ├── accountform.js
+    │   ├── logo.jpg
+    │   ├── script.js
+    │   └── styles.css   ------> changes added to styles 
+    ├── templates
+    │   ├── edit_recipe.html
+    │   ├── index.html  ------> changes added to index 
+    │   ├── profile.html
+    │   ├── recipes.html
+    │   └── search_recipe.html
+    └── test

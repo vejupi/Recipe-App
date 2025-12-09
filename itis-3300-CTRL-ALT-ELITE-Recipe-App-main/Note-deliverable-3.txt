@@ -1,0 +1,34 @@
+.
+├── GROUP-INFO
+├── Meeting Minutes
+│   ├── meeting-min-oct-22
+│   ├── meeting-min-oct-28
+│   ├── meeting-mins-sept-06.md
+│   └── meeting-mins-sept-17
+├── Note-deliverable-2
+├── Planning Documents
+│   └── project-requirements.md
+├── Project Reports
+│   ├── Team Deliverable 3.pdf    --> Deliverable 3 report pdf
+│   └── projectreports.md
+├── README.md
+├── README.md
+├── deliverable1.txt
+├── inspection-code-CTRL-ALT-ELITE.pdf  --> inspection document with core functionalities of phase 1
+└── src
+    ├── App.py                -->   app.py for all recipe functions
+    ├── database
+    │   └── database.sql      -->   placeholder for database
+    ├── requirements.txt 
+    ├── static
+    │   ├── accountform.js
+    │   ├── logo.jpg
+    │   ├── script.js         -->   script file for javascript for elements
+    │   └── styles.css        -->   css file with styling for elements
+    ├── templates             -->   all html files for functions listed in app.py
+    │   ├── edit_recipe.html 
+    │   ├── index.html
+    │   ├── profile.html
+    │   ├── recipes.html
+    │   └── search_recipe.html
+    └── test

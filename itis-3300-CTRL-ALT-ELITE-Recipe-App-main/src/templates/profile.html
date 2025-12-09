@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='accountform.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">CTRL-ALT-EAT</h1>
+        <nav>
+            <ul class ="nav-tabs"> <!--possible nav tabs and other HTML pages-->
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('recipesPage') }}">Recipes</a></li>
+                <li><a href="{{ url_for('profilePage') }}">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class ="profilePage" id ="profilePage">
+        <h2>Welcome, {{ user[1] }} {{ user[2] }}!</h2>
+        <p><strong>Username: {{ user[4] }}</strong></p>
+        <p><strong>Email: {{ user[3] }}</strong></p>
+    </div>
+    
+
+</body>
+
+
+</html>
